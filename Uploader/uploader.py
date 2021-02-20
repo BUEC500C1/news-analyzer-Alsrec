@@ -1,24 +1,5 @@
 # upload and prosecess API(entity)
-# {"user":
-#   {
-#       "userid":"alsrec"
-#       [
-#           "file":{
-#                   fileid:"alsrec/fileid"
-#                      [
-#                       "type":
-#                       "size":
-#                       "keywords":
-#                       "tags":
-#                       "permission":
-#                       "author":
-#                       "createtime":
-#                       "status":
-#                       ]
-#                   }
-#       ]
-#   }
-# }
+
 
 
 import time
