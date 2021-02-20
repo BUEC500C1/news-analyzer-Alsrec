@@ -25,21 +25,21 @@ def create(files, filename):
 
 
 def Delete(filename):
-    if filename == None:
+    if filename == NULL:
         print("error filename")
         return "errorfilename"
     else:
         return "delete file successfully!"
 
 def Update(files, filename):
-    if filename == None:
+    if filename == NULL:
         print("error filename")
         return "errorfilename"
     else:
         return "update file successfully"
 
 def read(filename):
-    if filename == None:
+    if filename == NULL:
         print("error filename")
         return "errorfilename"
     else:
