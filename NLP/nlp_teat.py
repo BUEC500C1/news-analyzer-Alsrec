@@ -1,4 +1,4 @@
-from npl import *
+from nlp import *
 
 def getsentiment_test():
   assert getsentiment("hellow") == "postive"
