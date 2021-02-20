@@ -43,7 +43,7 @@ def create(files, filename):
         return "success"
 
 
-def Delete(filemane):
+def Delete(filename):
     if filename == None:
         print("error filename")
         return "errorfilename"
