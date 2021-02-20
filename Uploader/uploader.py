@@ -24,14 +24,14 @@ def create(files, filename):
         return "success"
 
 
-def Delete(filename):
+def delete(filename):
     if filename == None:
         print("error filename")
         return "errorfilename"
     else:
         return "delete file successfully!"
 
-def Update(files, filename):
+def update(files, filename):
     if filename == None:
         print("error filename")
         return "errorfilename"
