@@ -36,7 +36,7 @@ def create(files, filename):
     if filename == NULL:
         print("error filename")
         return "errorfilename"
-    else
+    else:
         name = filename
         createtime = time.time()
         print("create file successfully!")
@@ -47,19 +47,19 @@ def Delete(filemane):
     if filename == NULL:
         print("error filename")
         return "errorfilename"
-    else
+    else:
         return "delete file successfully!"
 
 def Update(files, filename):
     if filename == NULL:
         print("error filename")
         return "errorfilename"
-    else
+    else:
         return "update file successfully"
 
 def read(filename):
     if filename == NULL:
         print("error filename")
         return "errorfilename"
-    else
+    else:
         return "open file succseefully"
