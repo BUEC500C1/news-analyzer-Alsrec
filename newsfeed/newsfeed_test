@@ -1,0 +1,8 @@
+from newsfeed import *
+
+def check_if_exist_test():
+  assert check_if_exist("hellow", ready) == True
+  
+def search_on_web_test():
+  assert search_on_web("hellow", "postive", "US") == "...."
+
