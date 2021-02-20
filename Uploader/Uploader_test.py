@@ -6,7 +6,7 @@ def test_create():
   
 def test_delete():
   assert delete(None) == "errorfilename"
-  assert delete({hellow") == "delete file successfully!"
+  assert delete("hellow") == "delete file successfully!"
   
 def test_update():
   assert update(None) == "errorfilename"
