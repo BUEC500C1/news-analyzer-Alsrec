@@ -7,5 +7,5 @@ def getsentiment(text):
 
 
 def getkeywords(text):
-    keywords = {"US"}
+    keywords = "US"
     return keywords
