@@ -33,7 +33,7 @@ import time
 # Read--> look the context of a document
 
 def create(files, filename):
-    if filename == NULL:
+    if filename == None:
         print("error filename")
         return "errorfilename"
     else:
@@ -44,21 +44,21 @@ def create(files, filename):
 
 
 def Delete(filemane):
-    if filename == NULL:
+    if filename == None:
         print("error filename")
         return "errorfilename"
     else:
         return "delete file successfully!"
 
 def Update(files, filename):
-    if filename == NULL:
+    if filename == None:
         print("error filename")
         return "errorfilename"
     else:
         return "update file successfully"
 
 def read(filename):
-    if filename == NULL:
+    if filename == None:
         print("error filename")
         return "errorfilename"
     else:
