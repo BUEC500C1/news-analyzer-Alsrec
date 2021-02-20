@@ -9,8 +9,8 @@ def test_delete():
   assert delete("hellow") == "delete file successfully!"
   
 def test_update():
-  assert update(None) == "errorfilename"
-  assert update("hellow") == "update file successfully"
+  assert update(123, None) == "errorfilename"
+  assert update(123, "hellow") == "update file successfully"
 
 def test_read():
   assert read(None) == "errorfilename"
