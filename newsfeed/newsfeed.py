@@ -1,16 +1,22 @@
+
 # News feed ingester API(entity)
 
 
 # check_if_exist --> check if the file you want to search is exist
 
+import flask
+import json
 
+api = Flask(__name__)
 
-
-def check_if_exist(filename, status):
-#    if filename does not exist, returen "filename dose not exist"
-#    if the status is not analysed returen "file is not ready for search"
+@api.route("/files/<filename>")
+def check_if_exist(filename):
+#    if filename does not exist, return "filename dose not exist"
+#    if the status is not analysed return "file is not ready for search"
     return True
 
-def search_on_web(filename, sentiment, keywords):
+@app.route("/files/<filename>")
+def search_on_web(sentiment, keywords):
     doucument = "...."
     return doucument
+
