@@ -8,11 +8,6 @@ cluster = MongoClient("mongodb+srv://Wodiaonima38:12345@cluster0.c0zss.mongodb.n
 db = cluster["file"]
 collection = db["news"] 
 
-
-# Add new user to db
-# take name:string ,email:string ,password:string
-# hash input password then add user to database
-# Return json message
 def addUser(name, email, password):
     user = collection.find_one({"email": email})
     if user == None:
@@ -24,11 +19,7 @@ def addUser(name, email, password):
         return {"message": "Already Exist"}
 
 
-# Get user from db
-# take email:string ,password:string
-# hash input password then query db
-# Return user data
-# Erorr return json message
+
 def getUser(email, password):
     user = collection.find_one(
         {"email": email, "password": hashlib.sha256(password.encode('utf-8')).hexdigest()})
@@ -38,11 +29,6 @@ def getUser(email, password):
         return user
 
 
-# add new picture to user data
-# take email:string ,password:string , filename:string
-# hash input password then update user data
-# Return json message
-# Erorr return json message
 def addphoto(email, password, photoName):
     result = collection.update_one(
         {"email": email, "password": hashlib.sha256(password.encode('utf-8')).hexdigest()}, {
