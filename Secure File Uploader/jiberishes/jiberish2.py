@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './uploaded/'
 
 #DB cluster info
-cluster = MongoClient("mongodb+srv://985552883@qq.com:qq.comcyh19980203@IP:27017/somedb?authSource=admin&readPreference=secondaryPreferred")
+cluster = MongoClient("mongodb+srv://alsrec:<password>@cluster0.4trne.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = cluster["file"]
 collection = db["news"]
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
